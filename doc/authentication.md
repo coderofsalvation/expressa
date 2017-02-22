@@ -1,5 +1,7 @@
 ## Authentication
 
+> NOTE: in many cases you want to use [expressa-client](https://www.npmjs.com/package/expressa-client), which already implements the endpoints below
+
 | method | endpoint                      | description  |
 |--------|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | POST   | /user/login                   | expects JSON in the message body. e.g. `{"email": "email@example.com", password: "<the password>"}                                                                                             |

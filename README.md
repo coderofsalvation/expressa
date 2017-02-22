@@ -1,4 +1,4 @@
-![](expressa.png)
+![](https://github.com/thomas4019/expressa/raw/master/expressa.png)
 
 ## data-driven extendable API framework for Node.js
 
@@ -6,15 +6,14 @@ Expressa makes it easy to create basic APIs by using [JSON schema](http://json-s
 
 * django-like __admin interface__ for creating collection-__REST__ endpoints and managing permissions 
 * collection schema's can be edited *and* added __through the admin interface__ 
-* re-use collection schema's in your frontend to generate forms
 * easily extendable so you can add complex features as well
 * define collections as [JSON schema](http://json-schema.org) instead of custom code
 * per-collection database storage: *MongoDB*, *PostgreSQL*, or *JSON-files* (useful for version control)
-
-> Best of all: it's just middleware, not a framework 
-
-* mix-and-mash: easily throw in other express middleware and endpoints 
+* mix-and-mash: easily throw in other [express middleware and endpoints](https://github.com/search?l=JavaScript&o=desc&q=express+middleware&s=stars&type=Repositories&utf8=%E2%9C%93)
 * decorate expressa-endpoints: add event listeners which stop/modify requests (responses)
+
+> :heart: Best of all: it's just middleware and unifies browser- __and__ server-access to database(s)
+
 
 --------------------------------
 
@@ -77,6 +76,7 @@ Each object will contain this meta property:
 
 * [Usecase: creating a blog collection and post](doc/blogexample.md)
 * [Permissions](doc/permissions.md)
+* [Access collections in the browser](https://www.npmjs.com/package/expressa-client)
 * [Authentication using JSON Web Tokens](doc/authentication.md)
 * [Managing CRUD permissions using the admin interface](doc/permissions.md)
 * [Modifying behavior using listeners](doc/listeners.md)
