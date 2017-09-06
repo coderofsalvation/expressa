@@ -39,7 +39,7 @@ module.exports = (function(settings, collection) {
 			});
 		},
 		find: function(query, offset, limit, orderby) {
-			var pgQuery = mongoToPostgres('data', query)
+			var pgQuery = mongoToPostgres('data', query || {})
 			return new Promise(function(resolve, reject) {
 				pg.connect(settings.postgresql_uri, function(err, client, done) {
 					if (err) {
@@ -103,7 +103,7 @@ module.exports = (function(settings, collection) {
 						if (err) {
 							reject(err);
 						}
-						resolve(data);
+						resolve( process.env.POSTGRES_RETURNID ? data._id : data );
 					})
 				});
 			});
